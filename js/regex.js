@@ -176,3 +176,35 @@ function montaPatternDeDataMaisLegivel() {
 	return DIA + _DE_ +  MES + _DE_ + ANO;  
 
 }
+
+//Não faz parte do curso
+let example = document.querySelector('#comment');
+
+if(example) {
+	example.textContent = ''
+	example.textContent += 'Âncoras\n';
+	example.textContent += '\\b - Word boundary\n';
+	example.textContent += '\\B - Non word boundary\n';
+	example.textContent += '^  - Início do alvo\n';
+	example.textContent += '$  - Fim do alvo\n\n';
+	
+	example.textContent += 'Quantifier\n';
+	example.textContent += '{n,m} - No mínimo n, no máximo m vezes\n';
+	example.textContent += '?     - Zero ou mais vezes\n';
+	example.textContent += '+     - Uma ou mais vezes\n';
+	example.textContent += '*     - Zero ou mais vezes\n\n';
+	
+	example.textContent += 'Classes de char - []\n';
+	example.textContent += '[A-Z] - letras de A até Z\n';
+	example.textContent += '[123] - 1,2 ou 3\n';
+	example.textContent += '\\d    - Todos os dígitos [0-9]\n';
+	example.textContent += '\\\s    - Whitespace [ \\t\\r\\n\\f ]\n';
+	example.textContent += '\\w    - wordchar [A-Za-z0-9_]\n';
+	example.textContent += '\\D    - Todos os não dígitos\n';
+	example.textContent += '\\W    - Todos os não wordchar\n\n';
+	
+	example.textContent += 'Grupos\n';
+	example.textContent += '(\\w+)  - Grupo de word char\n';
+	example.textContent += '(\\w+)? - Grupo opcional\n';
+	example.textContent += '(?:\\w+) - non-capturing group\n';
+}
